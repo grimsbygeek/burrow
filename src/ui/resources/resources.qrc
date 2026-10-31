@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="worldmap.txt">worldmap.txt</file>
+        <file alias="icons/wgtray-16.png">icons/wgtray-16.png</file>
+        <file alias="icons/wgtray-24.png">icons/wgtray-24.png</file>
+        <file alias="icons/wgtray-32.png">icons/wgtray-32.png</file>
+        <file alias="icons/wgtray-48.png">icons/wgtray-48.png</file>
+        <file alias="icons/wgtray-64.png">icons/wgtray-64.png</file>
+        <file alias="icons/wgtray-128.png">icons/wgtray-128.png</file>
+        <file alias="icons/wgtray-256.png">icons/wgtray-256.png</file>
+    </qresource>
+</RCC>

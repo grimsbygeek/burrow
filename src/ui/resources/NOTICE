@@ -1,0 +1,9 @@
+worldmap.txt is derived from Natural Earth 110m land polygons (public domain).
+https://www.naturalearthdata.com/
+Regenerate with tools/gen_worldmap.py.
+
+icons/wgtray.svg and icons/wgtray-*.png are an original icon made for this project (GPL-3.0-or-later,
+like the rest of the code). They do not use the WireGuard logo.
+
+"WireGuard" is a registered trademark of Jason A. Donenfeld. This project is an independent, unofficial
+manager for WireGuard connections and is not affiliated with or endorsed by the WireGuard project.

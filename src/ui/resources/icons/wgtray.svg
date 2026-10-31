@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b8a8f"/>
+      <stop offset="1" stop-color="#0d4f5c"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)"/>
+  <!-- the tunnel: an archway seen head-on -->
+  <path d="M30 100 V62 a34 34 0 0 1 68 0 V100 Z" fill="#ffffff"/>
+  <path d="M44 100 V64 a20 20 0 0 1 40 0 V100 Z" fill="#0d4f5c"/>
+  <!-- a packet travelling through it -->
+  <circle cx="64" cy="82" r="8" fill="#3ddc97"/>
+  <!-- ground line -->
+  <rect x="22" y="98" width="84" height="6" rx="3" fill="#ffffff"/>
+</svg>

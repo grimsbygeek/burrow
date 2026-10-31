@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Burrow
+GenericName=WireGuard Connection Manager
+Comment=Import, connect and manage WireGuard VPN connections
+Exec=wgtray
+Icon=@WGTRAY_APP_ID@
+Terminal=false
+Categories=Network;Qt;
+Keywords=vpn;wireguard;tunnel;network;
+StartupWMClass=wgtray

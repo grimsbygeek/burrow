@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>@WGTRAY_APP_ID@</id>
+  <name>Burrow</name>
+  <summary>Import, connect and manage WireGuard VPN connections</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <description>
+    <p>
+      A simple way to use WireGuard on Linux. Import the file from your VPN provider or enter the details
+      yourself, then connect and disconnect with one button.
+    </p>
+    <ul>
+      <li>Import a .conf file, or create a connection by typing in the details (with key generation)</li>
+      <li>One-click connect and disconnect, with live data sent and received</li>
+      <li>Export a connection as a file or a QR code for your phone</li>
+      <li>Rename and delete connections</li>
+      <li>System tray icon with quick connect and disconnect</li>
+      <li>Light and dark themes</li>
+    </ul>
+    <p>
+      Connections are managed through NetworkManager, so they behave like any other network connection on your system.
+    </p>
+    <p>
+      This is an independent project. It is not affiliated with or endorsed by the WireGuard project.
+      WireGuard is a registered trademark of Jason A. Donenfeld.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">@WGTRAY_APP_ID@.desktop</launchable>
+  <provides>
+    <binary>wgtray</binary>
+  </provides>
+
+  <url type="donation">https://buymeacoffee.com/grimsbygeek</url>
+  <!-- TODO before submitting: homepage, bugtracker, vcs-browser, screenshots (see packaging/README.md) -->
+
+  <content_rating type="oars-1.1" />
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+  <requires>
+    <display_length compare="ge">600</display_length>
+  </requires>
+
+  <releases>
+    <release version="0.1.0" date="2026-10-25">
+      <description>
+        <p>First release.</p>
+      </description>
+    </release>
+  </releases>
+</component>

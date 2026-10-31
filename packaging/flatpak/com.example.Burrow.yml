@@ -1,0 +1,59 @@
+# Flatpak manifest. The file name must match app-id; packaging/set-app-id.sh renames everything together.
+app-id: com.example.Burrow
+runtime: org.kde.Platform
+runtime-version: '6.11'
+sdk: org.kde.Sdk
+command: wgtray
+
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  # create, connect and delete connections, and read their state
+  - --system-talks-name=org.freedesktop.NetworkManager
+  # the tray icon, and the "still running in the tray" notification
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --talk-name=org.freedesktop.Notifications
+
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - '*.a'
+  - '*.la'
+
+modules:
+  - name: libsodium
+    buildsystem: autotools
+    config-opts:
+      - --disable-static
+    sources:
+      - type: archive
+        url: https://download.libsodium.org/libsodium/releases/libsodium-1.0.22.tar.gz
+        sha256: adbdd8f16149e81ac6078a03aca6fc03b592b89ef7b5ed83841c086191be3349
+
+  - name: libqrencode
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DBUILD_SHARED_LIBS=ON
+      - -DWITH_TOOLS=NO
+      - -DWITHOUT_PNG=ON
+      - -DWITH_TESTS=NO
+    sources:
+      - type: archive
+        url: https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz
+        sha256: 5385bc1b8c2f20f3b91d258bf8ccc8cf62023935df2d2676b5b67049f31a049c
+
+  - name: wgtray
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DWGTRAY_APP_ID=com.example.Burrow
+      - -DWGTRAY_BUILD_TESTS=OFF
+    sources:
+      # local checkout, for testing. For Flathub, replace with:
+      #   - type: git
+      #     url: https://github.com/<you>/<repo>.git
+      #     tag: v0.1.0
+      - type: dir
+        path: ../..
