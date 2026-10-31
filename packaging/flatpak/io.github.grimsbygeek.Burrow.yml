@@ -1,5 +1,5 @@
 # Flatpak manifest. The file name must match app-id; packaging/set-app-id.sh renames everything together.
-app-id: com.example.Burrow
+app-id: io.github.grimsbygeek.Burrow
 runtime: org.kde.Platform
 runtime-version: '6.11'
 sdk: org.kde.Sdk
@@ -48,7 +48,7 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
-      - -DWGTRAY_APP_ID=com.example.Burrow
+      - -DWGTRAY_APP_ID=io.github.grimsbygeek.Burrow
       - -DWGTRAY_BUILD_TESTS=OFF
     sources:
       # local checkout, for testing. For Flathub, replace with:

@@ -17,7 +17,7 @@ endif()
 
 # Reverse-DNS application ID. Used for the desktop file, icon and AppStream names and the window class.
 # Change it with packaging/set-app-id.sh (it keeps the Flatpak manifest in step).
-set(WGTRAY_APP_ID "com.example.Burrow" CACHE STRING "Application ID")
+set(WGTRAY_APP_ID "io.github.grimsbygeek.Burrow" CACHE STRING "Application ID")
 add_compile_definitions(WGTRAY_APP_ID="${WGTRAY_APP_ID}")
 
 add_subdirectory(src)

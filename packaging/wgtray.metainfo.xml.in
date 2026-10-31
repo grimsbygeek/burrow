@@ -35,7 +35,13 @@
   </provides>
 
   <url type="donation">https://buymeacoffee.com/grimsbygeek</url>
-  <!-- TODO before submitting: homepage, bugtracker, vcs-browser, screenshots (see packaging/README.md) -->
+  <url type="homepage">https://github.com/grimsbygeek/burrow</url>
+  <url type="bugtracker">https://github.com/grimsbygeek/burrow/issues</url>
+  <url type="vcs-browser">https://github.com/grimsbygeek/burrow</url>
+  <developer id="io.github.grimsbygeek">
+    <name>grimsbygeek</name>
+  </developer>
+  <!-- TODO before submitting: screenshots (see packaging/README.md) -->
 
   <content_rating type="oars-1.1" />
 
