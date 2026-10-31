@@ -11,7 +11,7 @@ finish-args:
   - --socket=fallback-x11
   - --device=dri
   # create, connect and delete connections, and read their state
-  - --system-talks-name=org.freedesktop.NetworkManager
+  - --system-talk-name=org.freedesktop.NetworkManager
   # the tray icon, and the "still running in the tray" notification
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=org.freedesktop.Notifications
@@ -39,6 +39,7 @@ modules:
       - -DWITH_TOOLS=NO
       - -DWITHOUT_PNG=ON
       - -DWITH_TESTS=NO
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: archive
         url: https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz

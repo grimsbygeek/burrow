@@ -68,7 +68,7 @@ Build and run:
 
 | Permission | Why |
 |---|---|
-| `--system-talks-name=org.freedesktop.NetworkManager` | create, connect and delete connections; read their state and keys |
+| `--system-talk-name=org.freedesktop.NetworkManager` | create, connect and delete connections; read their state and keys |
 | `--talk-name=org.kde.StatusNotifierWatcher` | the system tray icon |
 | `--talk-name=org.freedesktop.Notifications` | the "still running in the tray" notification |
 | Wayland/X11, DRI, IPC | window and rendering |

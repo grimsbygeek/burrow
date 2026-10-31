@@ -2,3 +2,7 @@ build/
 .cache/
 compile_commands.json
 *.user
+repo/
+build-dir/
+.flatpak-builder/
+*.flatpak
